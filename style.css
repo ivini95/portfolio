@@ -50,7 +50,8 @@ main {
     width: 192px;
     background-color: transparent;
     border: 2px solid #F2352A;
-    
+    border-radius: 3px;
+
 }
 
 #mainContainer > button > a{
@@ -60,6 +61,7 @@ main {
     color: #F2352A;
     font-weight: 400;
     padding:16px 36px;
+    
 }
 
 #mainContainer > button:hover {
@@ -194,7 +196,7 @@ main {
 
 .techs {
 
-    max-width: 306px;
+    width: 306px;
     height: 451px;
     border: 2px solid #3FD3AD;
     border-radius: 15px;
@@ -203,18 +205,14 @@ main {
     padding: 16px;
     gap: 16px;
     overflow: scroll;
-}
-
-.techs > div {
-    display: flex;
-    gap: 16px;
+    box-sizing: border-box;
 }
 
 .tech {
-    width: 129px;
-    height: 129px;
+    width: 100%;
+    min-height: 64px;
     background-color: #3FD3AD;
-    border-radius: 15px;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -222,6 +220,7 @@ main {
     font-weight: 600;
     color: #242527;
     text-align: center;
+    
 }
 
 
@@ -573,7 +572,8 @@ main {
         width: 328px;
         height: 273px;
         justify-content: center;
-        
+        gap: 8px;
+        margin-top: 8px;
     }
 
     .techImageContainer {
@@ -606,29 +606,10 @@ main {
     }
     
     
+    
     .techs {
-        height: 225px;
-        max-width: 296px;
-        display: flex;
-        flex-direction: row;
-        padding: 16px;
-        gap: 16px;
-        align-self: center;
-        justify-self: center;
-        
+        width: 100%;
     }
-    
-    .techs > div {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    
-    .tech {
-        width: 88px;
-        height: 88px;
-    }
-    
    
 
 }
