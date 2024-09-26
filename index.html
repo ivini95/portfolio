@@ -2,33 +2,158 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vinicius Ximenes</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
-    <body>
-        <main id="mainPage">
-            <div id="mainContainer">
-            
-                <div id="infoContainer">
-                    <h1>Vinicius Ximenes</h1>
-                    <h3>I'm web developer</h3>
-                    <div>
-                        <a href="https://github.com/ivini95" target="_blank" rel="noopener noreferrer"><img src="assets/github.svg" alt=""></a>
-                        <a href="https://www.linkedin.com/in/ivini95/" target="_blank" rel="noopener noreferrer"><img src="assets/linkedinIcon.svg" alt=""></a>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div>
+                <button onclick="changeLanguage('pt')" id="languageButtonPT">PT</button>
+                |
+                <button onclick="changeLanguage('en')" id="languageButtonEN">EN</button>
+            </div>
+            <button id="DownloadCbButton"><a href="download/AntonioViniciusXimenes.pdf" download id="download_cv">Baixar CV</a></button>
+        </div>
+    </header>
+    <main>
+        <div class="nameAndContactContainer">
+            <div class="nameContainer">
+                <h1 id="name">Vinicius Ximenes</h1>
+                <h2 id="profession">Programador</h2>
+            </div>
+            <section class="contactsContainer">
+                <div>
+                    <img src="images/github.png" alt="github icon">
+                    <a href="https://www.github.com/ivini95" target="_blank">github.com/ivini95</a>
+                </div>
+                <div>
+                    <img src="images/linkedin.png" alt="linkedin icon">
+                    <a href="https://www.linkedin.com/in/ivini95/" target="_blank">linkedin.com/in/ivini95</a>
+                </div>
+            </section>
+        </div>
+        <section class="presentationContainer">
+            <h3 id="about_me">Sobre Mim?</h3>
+            <p id="about_text">
+                Desenvolvedor web com sólida experiência em <b class="techWord">HTML</b>, <b class="techWord">CSS</b> e <b class="techWord">JavaScript</b>. Utilizo <b class="techWord">Figma</b> para design de interfaces, desenvolvi projetos Front-End com <b class="techWord">React.js</b> e projetos Full Stack com React.js e <b class="techWord">Node.js</b> (<b class="techWord">Express</b>/<b class="techWord">Nest.js</b>). Para estilização, aplico desde CSS puro a <b class="techWord">Sass</b>, <b class="techWord">Styled Components</b> e <b class="techWord">Tailwind</b>. Tenho experiência prática com bancos de dados utilizando <b class="techWord">Firebase</b>, <b class="techWord">PostgreSQL</b> e <b class="techWord">Prisma</b>.
+            </p>
+        </section>
+        <section class="projectsContainer">
+            <h3 id="projects">PROJETOS</h3>
+            <div class="buttonProjetsContainer">
+                <button onclick="changeProjectsView('front')" class="buttonProjets" id="project_front">Front-End</button>
+                <button onclick="changeProjectsView('back')" class="buttonProjets" id="project_back">Back-End</button>
+                <button onclick="changeProjectsView('full')" class="buttonProjets" id="project_full">FullStack</button>
+            </div>
+            <div class="projectsContainerImages scrollable">
+                <div class="project containerProject front">
+                    <img class="projectImg" src="images/akumaNoMiPage.png" alt="Projeto1">
+                    <img onclick="openInfo(1)" id="project1" class="moreButtonProject" src="images/moreButtonIcon.png" alt="more button icon">
+                </div>
+                <div class="project containerProjectProgress front">
+                    <div class="projectProgress">
+                        <p id="in_progress">Projeto <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
                     </div>
                 </div>
-                <button><a href="techs.html">Projects and Techs</a></button>
-                <div id="aboutContainer">
-                    <h4>About me</h4>
-                    <p>Olá, sou desenvolvedor web com foco em ReactJs e NodeJs, venho me especializando há 2 anos em diversas tecnologias, dá um confere nas minhas skills clicando no botão acima.</p>
+                <div class="project containerProjectProgress front">
+                    <div class="projectProgress">
+                        <p id="in_progress">Projeto <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
+                </div>
+                <div class="project containerProjectProgress front">
+                    <div class="projectProgress">
+                        <p id="in_progress">Projeto <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
+                </div>
+                <div class="project containerProjectProgress back">
+                    <div class="projectProgress">
+                        <p>Projeto  (back)  <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
+                </div>
+                <div class="project containerProjectProgress back">
+                    <div class="projectProgress">
+                        <p>Projeto (back) <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
+                </div>
+                <div class="project containerProjectProgress fullstack">
+                    <div class="projectProgress">
+                        <p>Projeto (full) <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
+                </div>
+                <div class="project containerProjectProgress fullstack">
+                    <div class="projectProgress">
+                        <p>Projeto (full) <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
                 </div>
             </div>
-        </main>
-    </body>
-    <script src="script.js"></script>
+            <div class="containerInfo">
+                <img onclick="closeInfoProject(1)" class="prevButtonProject" src="images/prevButtonIconBlue.png" alt="prev button icon">
+                <div>
+                    <h4 id="project_title">Sale No Mi</h4>
+                    <p id="project_description">Landing page criada para promover a venda de akuma no mi (fruta fictícia do anime One Piece). Criada utilizando <b class="techWord">React.Js</b> e <b class="techWord">Sass</b></p>
+                </div>
+                <img class="linkIconProject" src="images/linkIcon.png" alt="icon link">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3 id="technologies">Tecnologias</h3>
+        <div class="techsIconsContainer">
+            <div class="techsWrapper">
+                <img id="tech1" class="tech" src="images/html.png" alt="Ícone do HTML">
+                <img id="tech2" class="tech" src="images/css.png" alt="Ícone do CSS">
+                <img id="tech3" class="tech" src="images/JavaScript.png" alt="Ícone do JavaScript">
+                <img id="tech4" class="tech" src="images/Figma.png" alt="Ícone do Figma">
+                <img id="tech5" class="tech" src="images/react.png" alt="Ícone do React">
+                <img id="tech6" class="tech" src="images/typeScript.png" alt="Ícone do TypeScript">
+                <img id="tech7" class="tech" src="images/tailwind.png" alt="Ícone do Tailwind CSS">
+                <img id="tech8" class="tech" src="images/sass.png" alt="Ícone do SASS">
+                <img id="tech9" class="tech" src="images/npm.png" alt="Ícone do NPM">
+                <img id="tech10" class="tech" src="images/yarn.png" alt="Ícone do Yarn">
+                <img id="tech11" class="tech" src="images/firebase.png" alt="Ícone do Firebase">
+                <img id="tech12" class="tech" src="images/PostgresSQL.png" alt="Ícone do PostgreSQL">
+                <img id="tech13" class="tech" src="images/prisma.png" alt="Ícone do Prisma">
+                <img id="tech14" class="tech" src="images/nodejs.png" alt="Ícone do Node.js">
+                <img id="tech15" class="tech" src="images/jest.png" alt="Ícone do Jest">
+                <img id="tech16" class="tech" src="images/nest.png" alt="Ícone do NestJS">
+                <img id="tech17" class="tech" src="images/Next.js.png" alt="Ícone do Next.js">
+                <img id="tech18" class="tech" src="images/Vite.js.png" alt="Ícone do Vite.js">
+                <img id="tech19" class="tech" src="images/express.png" alt="Ícone do Express.js">
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="projectsDisplay.js"></script>
+<script src="scroll.js"></script>
+<script src="changeLanguage.js"></script>
 </html>

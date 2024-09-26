@@ -1,0 +1,23 @@
+{
+    "language": {
+        "pt": "PT",
+        "en": "EN"
+    },
+    "download_cv": "Download CV",
+    "name": "Vinicius Ximenes",
+    "profession": "Programmer",
+    "about_me": "About Me?",
+    "about_text": "Web developer with solid experience in <b class='techWord'>HTML</b>, <b class='techWord'>CSS</b>, and <b class='techWord'>JavaScript</b>. I use <b class='techWord'>Figma</b> for interface design, developed Front-End projects with <b class='techWord'>React.js</b>, and Full Stack projects with React.js and <b class='techWord'>Node.js</b> (<b class='techWord'>Express</b>/<b class='techWord'>Nest.js</b>). For styling, I apply everything from plain CSS to <b class='techWord'>Sass</b>, <b class='techWord'>Styled Components</b>, and <b class='techWord'>Tailwind</b>. I have practical experience with databases using <b class='techWord'>Firebase</b>, <b class='techWord'>PostgreSQL</b>, and <b class='techWord'>Prisma</b>.",
+    "projects": "PROJECTS",
+    "project_buttons": {
+        "front": "Front-End",
+        "back": "Back-End",
+        "full": "FullStack"
+    },
+    "in_progress": "Project <br/> in Progress",
+    "project_details": {
+        "title": "Sale No Mi",
+        "description": "Landing page created to promote the sale of akuma no mi (fictitious fruit from the anime One Piece). Created using <b class='techWord'>React.Js</b> and <b class='techWord'>Sass</b>"
+    },
+    "technologies": "Technologies"
+}
