@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Vinicius Ximenes</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
@@ -56,8 +56,12 @@
             </div>
             <div class="projectsContainerImages scrollable">
                 <div class="project containerProject front">
-                    <img class="projectImg" src="images/akumaNoMiPage.png" alt="Projeto1">
+                    <img class="projectImg" src="images/akumaNoMiPage.png" alt="sale no mi page">
                     <img onclick="openInfo(1)" id="project1" class="moreButtonProject" src="images/moreButtonIcon.png" alt="more button icon">
+                </div>
+                <div class="project containerProject front">
+                    <img class="projectImg" src="images/pokeMemory.png" alt="pokemon momory game">
+                    <img onclick="openInfo(4)" id="project4" class="moreButtonProject" src="images/moreButtonIcon.png" alt="more button icon">
                 </div>
                 <div class="project containerProjectProgress front">
                     <div class="projectProgress">
@@ -99,6 +103,30 @@
                         <span>.</span>
                     </div>
                 </div>
+                <div class="project containerProjectProgress back">
+                    <div class="projectProgress">
+                        <p>Projeto (back) <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
+                </div>
+                <div class="project containerProjectProgress back">
+                    <div class="projectProgress">
+                        <p>Projeto (back) <br/> em Criação</p>
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </div>
+                </div>
+                <div class="project containerProject fullstack">
+                    <img class="projectImg" src="images/battlePageMobile.png" alt="poke battle project">
+                    <img onclick="openInfo(2)" id="project2" class="moreButtonProject" src="images/moreButtonIcon.png" alt="more button icon">
+                </div>
+                <div class="project containerProject fullstack">
+                    <img class="projectImg" src="images/slimerpg.PNG" alt="slime rpg project">
+                    <img onclick="openInfo(3)" id="project3" class="moreButtonProject" src="images/moreButtonIcon.png" alt="more button icon">
+                </div>
                 <div class="project containerProjectProgress fullstack">
                     <div class="projectProgress">
                         <p>Projeto (full) <br/> em Criação</p>
@@ -122,8 +150,33 @@
                     <h4 id="project_title">Sale No Mi</h4>
                     <p id="project_description">Landing page criada para promover a venda de akuma no mi (fruta fictícia do anime One Piece). Criada utilizando <b class="techWord">React.Js</b> e <b class="techWord">Sass</b></p>
                 </div>
-                <img class="linkIconProject" src="images/linkIcon.png" alt="icon link">
+                <a href="https://sale-no-mi.vercel.app/" target="_blank"><img class="linkIconProject" src="images/linkIcon.png" alt="icon link"></a>
             </div>
+            <div class="containerInfo">
+                <img onclick="closeInfoProject(2)" class="prevButtonProject" src="images/prevButtonIconBlue.png" alt="prev button icon">
+                <div>
+                    <h4 id="project_title">PokeBattle</h4>
+                    <p id="project_description">Projeto para estudo de consumo de API externa com <b class="techWord">Fetch API</b>, conhecimentos mais avançados de <b class="techWord">ReactJs</b> como contexto e rotas e aprofundar mais os conhecimentos de <b class="techWord">Javascript</b>. Utilização do <b class="techWord">Firebase</b> para aplicar banco de dados não relacional e controle de usuários.</p>
+                </div>
+                <a href="https://poke3det.vercel.app/" target="_blank"><img class="linkIconProject" src="images/linkIcon.png" alt="icon link"></a>
+            </div>
+            <div class="containerInfo">
+                <img onclick="closeInfoProject(3)" class="prevButtonProject" src="images/prevButtonIconBlue.png" alt="prev button icon">
+                <div>
+                    <h4 id="project_title">Slime RPG</h4>
+                    <p id="project_description">Aplicação fullstack usando <b class="techWord">ReactJs</b> no front-end, <b class="techWord">NodeJs</b> com <b class="techWord">express</b> no back-end e <b class="techWord">postgreSQL</b> juntamente com <b class="techWord">Prisma</b> para criar o banco de dados relacional, usando <b class="techWord">TypeScript</b> durante todo o projeto, tambem utilizei <b class="techWord">socket.io</b> para desenvolvedor um sistema multiplayer que é algo que eu gosto muito. Ainda está em desenvolvimento a parte de batalha. Sistema de autenticação com <b class="techWord">OATH / JWT</b>.</p>
+                </div>
+                <a href="https://slime-rpg-lake.vercel.app/" target="_blank"><img class="linkIconProject" src="images/linkIcon.png" alt="icon link"></a>
+            </div>
+            <div class="containerInfo">
+                <img onclick="closeInfoProject(4)" class="prevButtonProject" src="images/prevButtonIconBlue.png" alt="prev button icon">
+                <div>
+                    <h4 id="project_title">Poke Memory</h4>
+                    <p id="project_description">Projeto utilizando <b class="techWord">HTML</b>, <b class="techWord">CSS</b> e <b class="techWord">JavaScript</b>.</p>
+                </div>
+                <a href="https://ivini95.github.io/MemoryGamePokemon/" target="_blank"><img class="linkIconProject" src="images/linkIcon.png" alt="icon link"></a>
+            </div>
+            
         </section>
     </main>
     <footer>
