@@ -59,21 +59,15 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    outline: 2px solid #F07167;
+}
+
 a {
     text-decoration: none;
     color: #FDFCDC;
 }
 
-#front01 {
-    display: none;
-}
-
-.techWord {
-    font-size: 14px;
-    font-weight: bolder;
-    color: #ff9b94;
-   
-}
 
 .headerContainer{
     display: flex;
@@ -201,9 +195,7 @@ a {
     transition: width 0.1s linear;
 }
 
-button:hover {
-    outline: 2px solid #F07167;
-}
+
 
 
 .projectsContainerImages {
@@ -226,6 +218,13 @@ button:hover {
     
 }
 
+.back {
+    display: none;
+}
+
+.fullstack {
+    display: none;
+}
 
 .containerProject {
     position: relative;
@@ -246,7 +245,6 @@ button:hover {
 }
 
 .containerInfo::before{
-    /*width: calc(31.2rem - 3.2rem) ;*/
     width: calc(100% - 4.6rem);
     height: calc(32rem - 3.4rem) ;
     border: 2px solid #0081A7;
@@ -270,13 +268,13 @@ button:hover {
     text-align: justify;
     bottom: 0;
     opacity: 0;
-    pointer-events: none; /* Não permite cliques quando invisível */
+    pointer-events: none; 
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .containerInfo.visible {
     opacity: 1;
-    pointer-events: auto; /* Permite cliques quando visível */
+    pointer-events: auto; 
 }
 
 .containerInfo > div {
@@ -312,6 +310,12 @@ button:hover {
     font-weight: bold;
 }
 
+.techWord {
+    font-size: 14px;
+    font-weight: bolder;
+    color: #ff9b94;
+   
+}
 
 .techsWrapper {
     display: flex;
@@ -329,6 +333,8 @@ button:hover {
     max-width: 80vw;
 }
 
+/* techs icons animation scroll */
+
 .techsIconsContainer[data-animated=true] {
     overflow: hidden;
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
@@ -341,15 +347,15 @@ button:hover {
 }
 
 
-
 @keyframes scroll {
     to {
         transform: translate(calc(-50% - 0.5rem));
     }
 }
 
+/* ----------------------------------------------------------- */
 
-
+/* pc display */
 
 @media (min-width: 1024px)  {
 
@@ -455,35 +461,36 @@ button:hover {
         max-width: 80rem;
     }
 
-    /* Para navegadores WebKit (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 8px; /* Largura da barra de rolagem */
-    height: 8px; /* Altura da barra de rolagem horizontal */
-    
+    /* scroll style change */
+    ::-webkit-scrollbar {
+        width: 8px; 
+        height: 8px;
+        
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #888; 
+        border-radius: 4px; 
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 4px; 
+    }
+
+    .scrollable {
+        scrollbar-width: thin; 
+        scrollbar-color: #888 #f1f1f1; 
+        overflow-y: hidden;
+    }
+    /* ----------------------------------------------------------- */
 }
 
-::-webkit-scrollbar-thumb {
-    background: #888; /* Cor do "thumb" (parte que se arrasta) */
-    border-radius: 4px; /* Bordas arredondadas */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Cor ao passar o mouse */
-}
-
-::-webkit-scrollbar-track {
-    background: #f1f1f1; /* Cor do fundo da barra de rolagem */
-    border-radius: 4px; /* Bordas arredondadas */
-}
-
-/* Para Firefox */
-.scrollable {
-    scrollbar-width: thin; /* Define a largura da barra de rolagem */
-    scrollbar-color: #888 #f1f1f1; /* thumb e track */
-    overflow-y: hidden;
-}
-    
-}
+/* projects in progress style and animation dots */
 
 .containerProjectProgress {
     min-width: 25.2rem;
@@ -499,7 +506,6 @@ button:hover {
     font-size: 2.4rem;
     margin-left: 4rem;
     align-items: center;
-    
     height: 100%;
 }
 
@@ -529,12 +535,4 @@ button:hover {
         opacity: 1;
     }
 }
-
-
-.back {
-    display: none;
-}
-
-.fullstack {
-    display: none;
-}
+/* ----------------------------------------------------------- */
