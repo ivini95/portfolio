@@ -35,7 +35,7 @@ function changeProjectsView(type){
 
     for (let project of projects){
         if (!project.className.includes(type)) {
-            project.classList.add("animate__animated", "animate__bounceOutLeft");
+            project.classList.add("animate__animated", "animate__bounceOutLeft"); 
             
             setTimeout(() => {
                 project.style.display = 'none'
